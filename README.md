@@ -51,7 +51,7 @@ Saber fazer uso adequado desses recursos vai te auxiliar na escrita de código m
 
 ### :clipboard: Sumário
 
-- <p><a href="#1"> :pushpin: 1.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#1"> :pushpin: 1.</a> Dado o código abaixo, complete-o de forma que seja impressa a área dos 3 retângulos. O código deve retornar em sequência 2, 15 e 54;</p>
 
 - <p><a href="#2"> :pushpin: 2.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
 
@@ -71,13 +71,26 @@ Saber fazer uso adequado desses recursos vai te auxiliar na escrita de código m
 
 ### 1°
 
+Dado o código abaixo, complete-o de forma que seja impressa a área dos 3 retângulos. O código deve retornar em sequência 2, 15 e 54.
+
 #### Resposta:
 
 <details>
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
+const assert = require('assert');
 
+const rectangleArea = (width, height) => width * height;
+
+const rectangle1 = [1, 2];
+const rectangle2 = [3, 5];
+const rectangle3 = [6, 9];
+const rectangles = [rectangle1, rectangle2, rectangle3];
+
+for (rectangle of rectangles) {
+  assert.equal(rectangleArea(...rectangle), rectangle[0] * rectangle[1]); // altere a chamada da funcao rectangleArea
+}
 ```
 
 </details>
