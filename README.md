@@ -55,17 +55,17 @@ Saber fazer uso adequado desses recursos vai te auxiliar na escrita de código m
 
 - <p><a href="#2"> :pushpin: 2.</a> Crie uma função sum que dado um número variável de elementos retorna a soma desses elementos;</p>
 
-- <p><a href="#3"> :pushpin: 3.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#3"> :pushpin: 3.</a> Escreva a função personLikes, que dado um objeto de parâmetro que representa uma pessoa, retorna todos os gostos daquela pessoa, conforme mostrado abaixo;</p>
 
-- <p><a href="#4"> :pushpin: 4.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#4"> :pushpin: 4.</a> </p>
 
-- <p><a href="#5"> :pushpin: 5.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#5"> :pushpin: 5.</a> </p>
 
-- <p><a href="#6"> :pushpin: 6.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#6"> :pushpin: 6.</a> </p>
 
-- <p><a href="#7"> :pushpin: 7.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#7"> :pushpin: 7.</a> </p>
 
-- <p><a href="#8"> :pushpin: 8.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#8"> :pushpin: 8.</a> </p>
 
 ## :books: Exercícios
 
@@ -136,13 +136,38 @@ assert.equal(sum(1, 2, 3, 4), 10);
 
 ### 3°
 
+Escreva a função personLikes, que dado um objeto de parâmetro que representa uma pessoa, retorna todos os gostos daquela pessoa, conforme mostrado abaixo.
+
 #### Resposta:
 
 <details>
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
+const assert = require('assert');
 
+const alex = {
+  name: 'Alex',
+  age: 26,
+  likes: ['fly fishing'],
+  nationality: 'Australian',
+};
+
+const gunnar = {
+  name: 'Gunnar',
+  age: 30,
+  likes: ['hiking', 'scuba diving', 'taking pictures'],
+  nationality: 'Icelandic',
+};
+
+const personLikes = ({ name, age, likes }) =>
+  `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+
+assert.equal(personLikes(alex), 'Alex is 26 years old and likes fly fishing.');
+assert.equal(
+  personLikes(gunnar),
+  'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+);
 ```
 
 </details>
