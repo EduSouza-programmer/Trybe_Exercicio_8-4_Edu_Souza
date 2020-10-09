@@ -53,7 +53,7 @@ Saber fazer uso adequado desses recursos vai te auxiliar na escrita de código m
 
 - <p><a href="#1"> :pushpin: 1.</a> Dado o código abaixo, complete-o de forma que seja impressa a área dos 3 retângulos. O código deve retornar em sequência 2, 15 e 54;</p>
 
-- <p><a href="#2"> :pushpin: 2.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
+- <p><a href="#2"> :pushpin: 2.</a> Crie uma função sum que dado um número variável de elementos retorna a soma desses elementos;</p>
 
 - <p><a href="#3"> :pushpin: 3.</a> Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA;</p>
 
@@ -103,7 +103,38 @@ for (rectangle of rectangles) {
 
 #
 
-### 1°
+### 2°
+
+Crie uma função sum que dado um número variável de elementos retorna a soma desses elementos. 
+
+#### Resposta:
+
+<details>
+ <summary> :pencil2: Código Javascript</summary>
+
+```js
+const assert = require('assert');
+
+const sum = (...values) => values.reduce((acc, value) => acc + value, 0);
+
+assert.equal(sum(), 0);
+assert.equal(sum(1), 1);
+assert.equal(sum(1, 2), 3);
+assert.equal(sum(1, 2, 3), 6);
+assert.equal(sum(1, 2, 3, 4), 10);
+```
+
+</details>
+
+<p align="right">
+    <a href="#clipboard-Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 3°
 
 #### Resposta:
 
@@ -124,7 +155,7 @@ for (rectangle of rectangles) {
 
 #
 
-### 1°
+### 4°
 
 #### Resposta:
 
@@ -145,7 +176,7 @@ for (rectangle of rectangles) {
 
 #
 
-### 1°
+### 5°
 
 #### Resposta:
 
@@ -166,7 +197,7 @@ for (rectangle of rectangles) {
 
 #
 
-### 1°
+### 6°
 
 #### Resposta:
 
@@ -187,7 +218,7 @@ for (rectangle of rectangles) {
 
 #
 
-### 1°
+### 7°
 
 #### Resposta:
 
@@ -208,28 +239,7 @@ for (rectangle of rectangles) {
 
 #
 
-### 1°
-
-#### Resposta:
-
-<details>
- <summary> :pencil2: Código Javascript</summary>
-
-```js
-
-```
-
-</details>
-
-<p align="right">
-    <a href="#clipboard-Sumário">
-    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
-  </a>
-</p>
-
-#
-
-### 1°
+### 8°
 
 #### Resposta:
 
