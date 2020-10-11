@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  <strike>Exercício 8-2: JS_ES6 - Higher Order Functions--map, filter - Concluído o/ o/ o/ :star:</strike>
+  <strike>Exercício 8-4: JS_ES6 - Higher Order Functions--map, filter - Concluído o/ o/ o/ :star:</strike>
 	<h4>Em resolução :runner:</h4>
 </h3>
 
